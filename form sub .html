@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="validate style.css">
+    <link rel="stylesheet" href="styleser.css">
+    <title>form New</title>
+    <link rel="icon" href="icon.ico" type="image/x-icon">
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <a  style="float:left;"><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">sign up</button></a>
+
+    <a   style="float:left;"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></a>
+  
+
+    <div id="id01" class="modal">
+  
+
+    <form class="modal-content animate" action="main .html" method="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <img src="avtar.avif" alt="Avatar" class="avatar">
+        </div>
+    
+    
+      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="pswd"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="pswd" min="6" max="20" required>
+            
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="password portal.html">password?</a></span>
+        </div>
+      </form>
+    
+     </div>
+   <div>
+   
+    
+    <!-- sign up -->
+    <div id="id02" class="modality" style="display: none;">
+        <form class="modality-content animate" action="main .html" method="post">
+          <div class="containered">
+            <div>
+          
+             <h1>Sign Up</h1>
+             <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            </div>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required="">
+      
+            
+            <label for="psw">Password</label>
+            <input type="password" placeholder="password" id="psw" name="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="">
+            <input type="checkbox" onclick="myFunction()">Show Password
+            <script>
+             function myFunction() {
+               var x = document.getElementById("psw");
+               if (x.type === "password") {
+                 x.type = "text";
+               } else {
+                 x.type = "password";
+               }
+             }
+             </script>
+             
+            <br>
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" id="psw-repeat" name="psw-repeat" min="6" max="20" required="">
+         
+          
+              
+            <div id="message" style="display: none;">
+             <h3>Password must contain the following:</h3>
+             <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+             <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+             <p id="number" class="invalid">A <b>number</b></p>
+             <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+           </div>
+           <script>
+   var myInput = document.getElementById("psw");
+   var letter = document.getElementById("letter");
+   var capital = document.getElementById("capital");
+   var number = document.getElementById("number");
+   var length = document.getElementById("length");
+   
+   // When the user clicks on the password field, show the message box
+   myInput.onfocus = function() {
+     document.getElementById("message").style.display = "block";
+   }
+   
+   // When the user clicks outside of the password field, hide the message box
+   myInput.onblur = function() {
+     document.getElementById("message").style.display = "none";
+   }
+   
+   // When the user starts to type something inside the password field
+   myInput.onkeyup = function() {
+     // Validate lowercase letters
+     var lowerCaseLetters = /[a-z]/g;
+     if(myInput.value.match(lowerCaseLetters)) {  
+       letter.classList.remove("invalid");
+       letter.classList.add("valid");
+     } else {
+       letter.classList.remove("valid");
+       letter.classList.add("invalid");
+     }
+     
+     // Validate capital letters
+     var upperCaseLetters = /[A-Z]/g;
+     if(myInput.value.match(upperCaseLetters)) {  
+       capital.classList.remove("invalid");
+       capital.classList.add("valid");
+     } else {
+       capital.classList.remove("valid");
+       capital.classList.add("invalid");
+     }
+   
+     // Validate numbers
+     var numbers = /[0-9]/g;
+     if(myInput.value.match(numbers)) {  
+       number.classList.remove("invalid");
+       number.classList.add("valid");
+     } else {
+       number.classList.remove("valid");
+       number.classList.add("invalid");
+     }
+     
+     // Validate length
+     if(myInput.value.length >= 8) {
+       length.classList.remove("invalid");
+       length.classList.add("valid");
+     } else {
+       length.classList.remove("valid");
+       length.classList.add("invalid");
+     }
+   }
+   </script>
+   <label for="country"><b>Country</b></label>
+   <input type="text" placeholder="country" name="country" required >
+   <br>
+ <label for="birthday"><B>birthday</B></label>            
+       <input type="date" placeholder="birthday" name="birthday" id="birthday" required>
+            <br>
+            <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+      
+            <p>By creating an account you agree to our <a href="terms and conditions.html" class="abno">Terms &amp; Privacy</a></p>
+      
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtng">Cancel</button>
+              <button type="submit" class="signupbtng">Sign Up</button>
+            </div>
+   
+   <!-- Use any element to open/show the overlay navigation menu -->
+   <script>
+     // Get the modals
+     var modal = document.getElementById('id01');
+     var modality = document.getElementById('id02');
+   
+     // When the user clicks anywhere outside of the modals, close them
+     window.onclick = function(event) {
+         if (event.target == modal) {
+             modal.style.display = "none";
+         }
+         if (event.target == modality) {
+           modality.style.display = "none";
+         }
+     }
+     </script>
+     
+          
+   
+   </div></form></div>
+</body>
+</html>

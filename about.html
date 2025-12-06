@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <style>
+       
+        #container {
+            position: relative;
+            height: 100vh;
+            top: 0%;
+            background-color: #f7a73f;
+            padding: 20px;
+        }
+
+        #heading {
+            font-size: 50px;
+            text-align: center;
+            color: red;
+        }
+
+        #use {
+            font-size: 20px;
+            color: black;
+        }
+
+        #features {
+            font-size: 20px;
+            color: black;
+        }
+
+        #team {
+            font-size: 20px;
+            color: black;
+        }
+
+        #links {
+            font-size: 20px;
+            color: black;
+        }
+
+        #icon_g1,
+        #icon_g2,
+        #icon_g3,
+        #icon_l1,
+        #icon_l2 {
+            font-size: 30px;
+            color: black;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        #icon_g1:hover,
+        #icon_g2:hover,
+        #icon_g3:hover,
+        #icon_l1:hover,
+        #icon_l2:hover {
+            color: red;
+        }
+
+        #code {
+            font-size: 20px;
+            color: black;
+        }
+
+        #return {
+            position: absolute;
+            padding: 15px 25px;
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            outline: none;
+            color: red;
+            background-color: #ff9900;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+            left: 75%;
+            top: 650px;
+            min-width: 300px;
+        }
+
+        #return:hover {
+            background-color: #f7a73f;
+        }
+
+        #return:active {
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <p id="heading">CAR RACING</p>
+        <p id="use">Usage - Download or clone the repository and navigate to the folder. In here there will be a file
+            called Main_menu.html which is the main file for the game. It contains the front page of the game. Open this
+            file in your browser, preferably Chrome or Firefox and you can go ahead with playing the game.</p><br>
+        <p id="features">Features:<br>1) For single-player, movement is with the arrow keys.<br>2) For dual player,
+            movement is with WASD or arrow keys depending on which side of the screen you are playing.</p><br>
+        <p id="team">credits<br>1) Keshav R Raju
+            <br>2) Vishnu S Reddy</p>
+            <br>
+        
+        <button id="return" class="return">↵</button>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("return").onclick = function () {
+            location.href = "Main_menu.html";
+        };
+    </script>
+</body>
+
+</html>

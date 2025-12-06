@@ -1,0 +1,54 @@
+.message-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 153, 0, 0.3);
+    text-align: center;
+    border: 2px solid rgba(255, 153, 0, 0.5);
+    max-width: 500px;
+    position: absolute;
+    z-index: -1;  /* This puts it behind the navbar */
+    margin-top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nerd {
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.logo-highlight {
+    background-color: #f90;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 0 10px;
+}
+.message-text {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.helo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: black;
+    
+    
+      }
+
+      .yes { 
+        background-color: #f90;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 0 10px;
+    
+    }

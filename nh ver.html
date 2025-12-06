@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .modal-unique {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content-unique {
+      background-color: #000000;
+      margin: 10% auto;
+      padding: 30px;
+      border: 1px solid #888;
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px #f90;
+    }
+    .modal-logo-unique {
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+    .modal-logo-unique .hub-unique {
+      background-color: #f90;
+      padding: 0 10px;
+      border-radius: 5px;
+    }
+    .modal-header-unique {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+    .modal-footer-unique {
+      display: flex;
+      justify-content: space-between;
+    }
+    .modal-footer-unique .confirm-button-unique {
+      background-color: #f90;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .modal-footer-unique .confirm-button-unique:hover {
+      background-color: #e68000;
+    }
+    .modal-footer-unique .cancel-button-unique {
+      background-color: #000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .modal-footer-unique .cancel-button-unique:hover {
+      background-color: #333;
+    }
+    .modal-footer-unique button {
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      margin: 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s, box-shadow 0.3s;
+      flex: 1;
+      margin: 0 10px;
+      font-size: 20px; /* Increased font size */
+    }
+    .message-unique {
+        color: #ffffff;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="ageVerificationModalUnique" class="modal-unique">
+  <div class="modal-content-unique">
+    <div class="modal-logo-unique">
+      Nerds <span class="hub-unique">Hub</span>
+    </div>
+    <div class="modal-header-unique">
+      Age Verification
+    </div>
+    <p class="message-unique">This website contains age-restricted
+         materials including nerdity and explicit
+          depictions of nerdish activity. By entering, 
+          you affirm that you are at least 8 years of age 
+          or the age of majority in the jurisdiction you are 
+          accessing the website from and you
+         consent to viewing nerdish explicit content.</p>
+    <div class="modal-footer-unique">
+      <button class="confirm-button-unique" onclick="verifyAge(true)">I am 18 or older-Enter</button>
+      <button class="cancel-button-unique" onclick="verifyAge(false)">I am under 18-Exit</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  function verifyAge(isAdult) {
+    if (isAdult) {
+      document.getElementById('ageVerificationModalUnique').style.display = 'none';
+    } else {
+      alert('You must be 18 years or older to enter this site.');
+    }
+  }
+
+  window.onload = function() {
+    document.getElementById('ageVerificationModalUnique').style.display = 'flex';
+  }
+</script>
+
+</body>
+</html>
