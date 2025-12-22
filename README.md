@@ -1,16 +1,18 @@
-# 🎮 Mini Games Website
+# 🎮 NerdsHub – Mini Games & Experiments
 
-A personal static website hosted on **GitHub Pages** featuring simple browser games and demos.
+🚧 **UNDER DEVELOPMENT** 🚧  
+This project is a work in progress. Features, designs, and gameplay may change over time.
 
-This project is made for **learning, practice, and experimentation** with HTML, CSS, and JavaScript.
+NerdsHub is a **personal static website** hosted on **GitHub Pages**, built for learning and experimenting with web development and browser-based games.
 
 ---
 
-## 🚀 Features
-- 🎯 Simple racing game
+## 🚀 What’s Inside
+- 🏎️ Simple racing game
 - 🐍 Classic Snake game
-- 🌐 Social links (Facebook / Instagram)
-- ⚡ Runs entirely in the browser (no backend)
+- 🎨 Animated UI elements (moving shapes, backgrounds)
+- 🌐 Social profile links
+- ⚡ Fully client-side (no backend)
 
 ---
 
@@ -22,38 +24,41 @@ This project is made for **learning, practice, and experimentation** with HTML, 
 
 ---
 
-## 📚 About the Project
-This project was created to:
-- Learn how browser games work
-- Practice editing and customizing existing code
-- Understand GitHub Pages deployment
-- Experiment with game mechanics and UI
+## 📚 Purpose
+This project is created for:
+- Learning game logic and mechanics
+- Practicing HTML, CSS animations, and JavaScript
+- Customizing and understanding existing code patterns
+- Experimenting with UI and visual effects
 
-Some game mechanics are **inspired by open-source projects and online tutorials**, with:
-- Modified names
-- Replaced assets
-- Customized structure and layout
+Game mechanics and UI animations are **inspired by common open-source projects and online tutorials**, with:
+- Replaced assets and images
+- Renamed elements and structure
+- Modified layouts and styling
 
-This project is **not intended for commercial use**.
+This project is intended for **educational and personal use only**.
 
 ---
 
 ## ⚠️ Disclaimer
-Game concepts and mechanics are common and widely used in many tutorials and examples online.  
-All assets and branding used here are customized or replaced for personal learning purposes.
+- Game concepts and mechanics are widely used and not owned by any single source  
+- UI animations (moving shapes, backgrounds) are common design patterns  
+- All branding, names, and assets used here are customized or replaced
+
+No claim of original invention over classic game concepts is made.
 
 ---
 
-## 🌍 Live Demo
-👉 Hosted using **GitHub Pages**
+## 🌍 Live Site
+Hosted using **GitHub Pages**
 
 ---
 
 ## 👤 Author
-Created and customized by **Gero**  
+Customized and maintained by **Gero**  
 🇵🇭 Philippines
 
 ---
 
 ## 📄 License
-This project is shared for **educational and personal use**.
+This repository is shared for **learning and personal use**.
